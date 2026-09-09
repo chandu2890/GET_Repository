@@ -22,6 +22,7 @@ test.describe('Catalog and product details', () => {
     await inventoryPage.openProduct('4');
 
     await productDetailsPage.expectProduct('Sauce Labs Backpack', '$29.99');
+    console.log('Product details page loaded successfully');
     await productDetailsPage.addToCart();
   });
 });
